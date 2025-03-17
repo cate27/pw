@@ -1,0 +1,65 @@
+div#container {
+    display: flex;
+    width: 100%;
+}
+
+div#con {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+h3#text {
+    font-family: "Iansui", cursive;
+    font-size: 1.5rem;
+    float: inline-start;
+}
+
+h1#texts {
+    position: relative;
+    left: 1rem;
+    background: linear-gradient(90deg, #00b4d8, #0077b6, #ade8f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+img#loghi {
+    width: 50%;
+    display: block;
+    box-shadow: 0 0 2em #888f98;
+    border-radius: 0.25em;
+    padding: 0 1rem;
+    background: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    color: white;
+}
+
+p#birth {
+    padding-top: 1rem;
+}
+
+p#birth,
+p#origin,
+p#brand,
+p#finaltext {
+    position: relative;
+    font-size: 1.05rem;
+    font-family: 'Iansui';
+    color: lightgrey;
+}
+
+small {
+    color: #ffba11;
+    font-size: 0.9rem;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: bold;
+}
