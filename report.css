@@ -3,8 +3,9 @@ main{
     display: grid;
     align-items: center;
     justify-items: center;
-    margin: 0px;
+    margin: 0;
     background: #000;
+    overflow: hidden;
 }
 
 div#text {
@@ -19,22 +20,22 @@ a.clicktext {
 #container {
     overflow: hidden;
     filter: brightness(300%);
-    max-width: 100%;
-    max-height: 100vh;
 }
     
 #txt {
     color: #fff;
-    font-size: 85px;
+    font-size: 8vw;
     font-weight: bold;
     font-family:sans-serif;
     text-transform: uppercase;
     background:#000;
+    position: relative;
 }
 
 @media screen and (max-width: 440px) {
     #txt {
-        font-size: 8vw;
+        font-size: 10vw;
+        max-width: 90%;
     }
 }
     
@@ -43,12 +44,6 @@ a.clicktext {
     position: absolute;
     mix-blend-mode: difference;
     filter: blur(3px);
-}
-
-@media screen and (max-width: 440px) {
-    #txt::before {
-        filter: blur(1px); /* Blur più leggero su mobile */
-    }
 }
     
 #gradient{
@@ -60,13 +55,6 @@ a.clicktext {
     background: linear-gradient(to right, #ff0084 0%,#6e00ff 100%);
     mix-blend-mode: multiply;
 }
-
-@media screen and (max-width: 440px) {
-    #gradient {
-        background: linear-gradient(to right, #ff0084 30%,#6e00ff 70%);
-    }
-}
-
     
 #light {
     position: absolute;
@@ -81,17 +69,16 @@ a.clicktext {
     mix-blend-mode: color-dodge;
     animation: light-area 3s linear infinite;
 }
-
-@media screen and (max-width: 440px) {
-    @keyframes light-area {
-        to { transform: translate(20%, 20%); } /* Movimento più contenuto */
-    }
-}
-
     
 @keyframes light-area {
     to { transform: translate(50%,50%); }
 }
+
+@media screen and (max-width: 440px) {
+    #light {
+        animation: light-area-mobile 3s linear infinite;
+    }
+} 
 
 h2.click {
     color: white;
