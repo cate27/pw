@@ -6,6 +6,7 @@ main{
     margin: 0;
     background: #000;
     overflow: hidden;
+    position: relative;
 }
 
 div#text {
@@ -20,11 +21,16 @@ a.clicktext {
 #container {
     overflow: hidden;
     filter: brightness(300%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
     
 #txt {
     color: #fff;
-    font-size: 8vw;
+    font-size: clamp(50px, 12vw, 85px);
     font-weight: bold;
     font-family:sans-serif;
     text-transform: uppercase;
@@ -32,10 +38,9 @@ a.clicktext {
     position: relative;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (min-width: 430px) {
     #txt {
-        font-size: 10vw;
-        max-width: 90%;
+        font-size: clamp(40px, 10vw, 60px); /* Adatta la grandezza della scritta */
     }
 }
     
@@ -44,6 +49,8 @@ a.clicktext {
     position: absolute;
     mix-blend-mode: difference;
     filter: blur(3px);
+    width: 100%;
+    text-align: center;
 }
     
 #gradient{
@@ -63,23 +70,6 @@ a.clicktext {
     right:0;
     bottom:0;
     background: radial-gradient(circle,white,black 35%) center / 25% 25%;
-}
-
-@media screen and (max-width: 440px) {
-    #light {
-        width: 70vw; /* Bagliore più ampio su mobile */
-        height: 70vw;
-        top: 15vh;
-        left: 15vw;
-        background-size: 60% 60%;
-        animation: light-area-mobile 3s linear infinite;
-    }
-
-    @keyframes light-area-mobile {
-        0% { transform: translate(0, 0) scale(1); }
-        50% { transform: translate(10vw, 10vh) scale(1.1); }
-        100% { transform: translate(0, 0) scale(1); }
-    }
 }
     
 #light {
