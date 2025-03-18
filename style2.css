@@ -39,6 +39,13 @@ img#loghi {
     margin-right: auto;
 }
 
+@media screen and (max-width: 440px) {
+    img#loghi {
+        width: 80%;
+        position: relative;
+    }
+}
+
 p {
     color: white;
 }

@@ -12,21 +12,39 @@ header {
 }
 
 #logo {
-    width: calc(100% / 3);
+    width: 33.33%;
     display: block;
     position: relative;
     text-align: center;
+}
+
+@media screen  and (max-width: 440px){
+    #logo {
+        width: 33.33%;
+    }
 }
 
 .logos {
     height: 100px;
 }
 
+@media screen and (max-width: 440px) {
+    .logos {
+        width: 100%;
+    }
+}
+
 nav.nav {
     display: block;
     position: relative;
-    width: calc(100% /3);
+    width: 33.33%;
     align-content: center;
+}
+
+@media screen and (max-width: 440px) {
+    nav.nav {
+        width: 33.33%;
+    }    
 }
 
 ul {
@@ -36,6 +54,12 @@ ul {
     flex-wrap: nowrap;
     justify-content: center;
     position: relative;
+}
+
+@media screen and (max-width: 440px) {
+    ul {
+        display: block;
+    }
 }
 
 li.home,
@@ -58,11 +82,17 @@ a#click:hover {
 }
 
 div#download {
-    width: calc(100% / 3);
+    width: 33.33%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 440px) {
+    div#download {
+        width: 33.33%;
+    }
 }
 
 h3 {

@@ -29,6 +29,12 @@ a.clicktext {
     text-transform: uppercase;
     background:#000;
 }
+
+@media screen and (max-width: 440px) {
+    #txt {
+        font-size: 60px;
+    }
+}
     
 #txt::before {
     content: 'CLICCA QUI';
