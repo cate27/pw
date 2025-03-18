@@ -64,6 +64,23 @@ a.clicktext {
     bottom:0;
     background: radial-gradient(circle,white,black 35%) center / 25% 25%;
 }
+
+@media screen and (max-width: 440px) {
+    #light {
+        width: 70vw; /* Bagliore più ampio su mobile */
+        height: 70vw;
+        top: 15vh;
+        left: 15vw;
+        background-size: 60% 60%;
+        animation: light-area-mobile 3s linear infinite;
+    }
+
+    @keyframes light-area-mobile {
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(10vw, 10vh) scale(1.1); }
+        100% { transform: translate(0, 0) scale(1); }
+    }
+}
     
 #light {
     mix-blend-mode: color-dodge;
@@ -73,12 +90,6 @@ a.clicktext {
 @keyframes light-area {
     to { transform: translate(50%,50%); }
 }
-
-@media screen and (max-width: 440px) {
-    #light {
-        animation: light-area-mobile 3s linear infinite;
-    }
-} 
 
 h2.click {
     color: white;
