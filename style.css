@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+@media screen and (max-width: 431px) {
+    body {
+        width: 91%;
+    }
+    
+}
+
 header {
     width: 100%;
     height: 100px;
@@ -20,7 +27,7 @@ header {
     text-align: center;
 }
 
-@media screen  and (max-width: 440px){
+@media screen  and (max-width: 431px){
     #logo {
         width: 33.33%;
     }
@@ -30,12 +37,6 @@ header {
     height: 100px;
 }
 
-@media screen and (max-width: 440px) {
-    .logos {
-        width: 100%;
-    }
-}
-
 nav.nav {
     display: block;
     position: relative;
@@ -43,7 +44,7 @@ nav.nav {
     align-content: center;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 431px) {
     nav.nav {
         width: 33.33%;
     }    
@@ -58,7 +59,7 @@ ul {
     position: relative;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 431px) {
     ul {
         display: block;
     }
@@ -91,7 +92,7 @@ div#download {
     align-items: center;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 431px) {
     div#download {
         width: 33.33%;
     }

@@ -1,0 +1,65 @@
+div#form {
+    padding: 2rem;
+}
+div#container {
+    max-width: 24rem;
+    margin: 0 auto;
+    box-shadow: 0 0 8em #373D46;
+    background-color: transparent;
+    border-radius: 1.5rem;
+}
+
+form {
+    padding: 3rem;
+}
+
+div#form-control {
+    display: grid;
+    position: relative;
+    width: 100%;
+}
+
+label {
+    color:  white;
+    padding: 1rem 0;
+    font-family: math;
+    font-size: 1.1rem;
+}
+
+input#nome,
+input#email {
+    font-size: 1rem;
+    border-radius: 1rem;
+    height: 2.2rem;
+    width: 100%;
+    border: 1px solid grey;
+    outline: 0;
+    font-family: monospace;
+}
+
+textarea#messaggio {
+    padding: 1em;
+    box-shadow: none;
+}
+
+textarea {
+    min-height: 3em;
+    display: block;
+    outline: 0;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+button.btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: "Winky Sans", sans-serif;
+}
+
+button.btn:hover {
+    filter: drop-shadow(2px 3px 15px #669bbc);
+}

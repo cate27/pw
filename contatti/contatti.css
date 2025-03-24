@@ -1,0 +1,64 @@
+div#containers {
+    height: 65vh;
+}
+
+h1#text {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 2rem;
+}
+
+div#container {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+div#con {
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 441px) {
+    div#con {
+        width: 80%;
+    }
+}
+
+div#chatta,
+div#chiama,
+div#mappa {
+    display: inline-grid;
+    width: 33%;
+    justify-items: center;
+}
+
+@media screen and (max-width: 441px) {
+    div#chatta,
+    div#chiama,
+    div#mappa {
+        width: 30%;
+    }
+}
+
+a.link {
+    text-decoration: none;
+    text-align: center;
+}
+
+h3#chat,
+h3#call,
+h3#maps {
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span#text {
+    color: white;
+    font-family: math;
+    font-size: 1.1rem;
+    text-align: center;
+}
