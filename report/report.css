@@ -26,6 +26,7 @@ a.clicktext {
     justify-content: center;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
 }
     
 #txt {
@@ -36,6 +37,7 @@ a.clicktext {
     text-transform: uppercase;
     background:#000;
     position: relative;
+    white-space: nowrap;
 }
     
 #txt::before {
@@ -45,6 +47,7 @@ a.clicktext {
     filter: blur(3px);
     width: 100%;
     text-align: center;
+    white-space: nowrap;
 }
     
 #gradient{
@@ -59,10 +62,8 @@ a.clicktext {
     
 #light {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top:-25vh;
-    left:-25vw;
+    top:-100%;
+    left:-100%;
     right:0;
     bottom:0;
     background: radial-gradient(circle,white,black 35%) center / 25% 25%;
@@ -77,18 +78,17 @@ a.clicktext {
     to { transform: translate(50%,50%); }
 }
 
-/* 📱 Adattamenti per dispositivi mobili senza ridurre l'effetto */
-@media screen and (max-width: 600px) {
+/* 📱 Adattamento per schermi ≤ 431px */
+@media screen and (max-width: 431px) {
     #txt {
-        font-size: clamp(40px, 10vw, 60px); /* Adatta la grandezza della scritta */
+        font-size: 60px; /* Adattiamo la scritta senza alterare lo stile */
+        text-align: center;
     }
 
     #light {
-        width: 150vw; /* Mantiene il bagliore grande */
-        height: 150vh;
-        top: -50vh;
-        left: -50vw;
-        background-size: 50% 50%;
+        top: -150%;
+        left: -150%;
+        background-size: 40% 40%; /* Evita tagli su schermi piccoli */
     }
 }
 
