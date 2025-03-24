@@ -26,6 +26,7 @@ a.clicktext {
     justify-content: center;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
 }
     
 #txt {
@@ -36,12 +37,7 @@ a.clicktext {
     text-transform: uppercase;
     background:#000;
     position: relative;
-}
-
-@media screen and (min-width: 430px) {
-    #txt {
-        font-size: clamp(40px, 10vw, 60px); /* Adatta la grandezza della scritta */
-    }
+    white-space: nowrap;
 }
     
 #txt::before {
@@ -51,6 +47,7 @@ a.clicktext {
     filter: blur(3px);
     width: 100%;
     text-align: center;
+    white-space: nowrap;
 }
     
 #gradient{
@@ -79,6 +76,19 @@ a.clicktext {
     
 @keyframes light-area {
     to { transform: translate(50%,50%); }
+}
+
+/* 📱 Adattamento per schermi ≤ 431px */
+@media screen and (max-width: 431px) {
+    #txt {
+        font-size: 60px; /* Adattiamo la scritta senza alterare lo stile */
+    }
+
+    #light {
+        top: -150%;
+        left: -150%;
+        background-size: 40% 40%; /* Evita tagli su schermi piccoli */
+    }
 }
 
 h2.click {
