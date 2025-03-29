@@ -8,19 +8,6 @@ div#con {
     margin: 2rem auto;
 }
 
-@media screen and (max-width: 431px) {
-    div#con {
-        margin: 0.5rem 0;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 431px) {
-    iframe {
-        width: 391px;
-    }
-}
-
 div#video {
     max-width: 100%;
 }
@@ -44,12 +31,6 @@ p#text {
     width: 60%;
 }
 
-@media screen and (max-width: 431px) {
-    p#text {
-        width: 100%;
-    }
-}
-
 h2.goals {
     color: white;
     text-transform: uppercase;
@@ -69,26 +50,12 @@ img#sostenibilita {
     margin: 1rem 0;
 }
 
-@media screen and (max-width: 431px) {
-    img#sostenibilita {
-        width: 125px;
-    }
-}
-
 p#textSostebilità,
 p#textSostenibilita2,
 p#textSostenibilita3 {
     color: white;
     font-family: 'Iansui';
     width: 90%;
-}
-
-@media screen and (max-width: 431px) {
-    p#textSostebilità,
-    p#textSostenibilita2,
-    p#textSostenibilita3 {
-        width: 100%;
-    }
 }
 
 div#impact {
@@ -114,24 +81,10 @@ p#textImpact {
     font-size: 1.05rem;
 }
 
-@media screen and (max-width: 431px) {
-    p#textImpact {
-        bottom: 10rem;
-        width: 50%;
-        display: inline-grid;
-    }
-}
-
 img#impacts {
     width: 45%;
     margin-left: 1rem;
     border-radius: 1rem;
-}
-
-@media screen and (max-width: 441px) {
-    img#impacts {
-        margin: 0;
-    }
 }
 
 div#circularSolutions {
@@ -156,22 +109,10 @@ p#textCircularSolutions {
     bottom: 13rem;
 }
 
-@media screen and (max-width: 431px) {
-    p#textCircularSolutions {
-        bottom: 10rem;
-    }
-}
-
 img#circular {
     width: 45%;
     margin-left: 1rem;
     border-radius: 1rem;
-}
-
-@media screen and (max-width: 441px) {
-    img#circular {
-        margin: 0;
-    }
 }
 
 div#recycle {
@@ -196,14 +137,6 @@ h3#titleRecreation {
     font-family: 'Iansui';
 }
 
-@media screen and (max-width: 431px) {
-    h3#subtitleRecycle,
-    h3#article,
-    h3#titleRecreation {
-        font-size: 1rem;
-    }
-}
-
 p#textRecycle,
 p#textReconditionedItems,
 p#textRecreation {
@@ -212,30 +145,9 @@ p#textRecreation {
     width: 90%;;
 }
 
-@media screen and (max-width: 431px) {
-    p#textRecycle,
-    p#textReconditionedItems,
-    p#textRecreation {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 431px) {
-    p#textReconditionedItems {
-        position: relative;
-        top: -1rem;
-    }
-}
-
 div.articles {
     display: inline-grid;
     width: 33%;
-}
-
-@media screen and (max-width: 431px) {
-    div.articles {
-        width: 30%;
-    }
 }
 
 img#recycleImg,
@@ -243,15 +155,6 @@ img#imgReconditioned,
 img#imgRecreation {
     width: 75%;
     height: 200px;
-}
-
-@media screen and (max-width: 431px) {
-    img#recycleImg,
-    img#imgReconditioned,
-    img#imgRecreation {
-        width: 100%;
-        height: 120px;
-    }
 }
 
 img#imgRecreation {
